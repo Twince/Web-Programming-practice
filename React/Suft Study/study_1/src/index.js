@@ -11,6 +11,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path = "/" component = {App} />
         <Route exact path = "/page" component = {Page1} />
+        // exact : 정확한 주소로 입력할 시 접속 (미 입력시 유연한 주소로 접속 가능)
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
