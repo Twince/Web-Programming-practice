@@ -23,17 +23,12 @@
 
 <script>
 export default {
-  methods: {
-    draw(radius) {
-      this.ctx.beginPath()
-      this.ctx.clearRect(0, 0, 200, 200)
-      this.ctx.arc(100, 100, radius, 0, Math.PI * 2)
-      this.ctx.fill()
+  data() {
+    return {
+      exampleContent:'',
+      exampleContentX: '',
+      exampleContentY: ''
     }
-  },
-  mounted() {
-    this.ctx = this.$el.getContext('2d')
-    this.draw(this.radius)
   }
 }
 </script>
@@ -55,7 +50,7 @@ export default {
       text-align: center;
       color: #2c3e50;
       
-      
+
       background-color: rgb(39, 39, 39);
     }
 
